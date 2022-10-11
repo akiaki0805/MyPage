@@ -1,43 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポートフォリオ</title>
+  <link rel="stylesheet" href="App.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <script src="ContactForm.js"></script>
+  <!--Hero section-->
+  <div class="hero">
+    <nav>
+      <h2 class="logo">Aki<span>Enginner</span></h2>
+      <!-- <ul>
+                <li><a href="#">ホーム</a></li>
+                <li><a href="#">ブログ</a></li>
+                <li><a href="#">ポートフォリオ</a></li>
+            </ul> -->
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+      <!-- <a href="#" class="btn">お問い合わせ</a> -->
+    </nav>
+    <div class="content">
+      <div class="body">
+        <div class="portfolioInfo">
+          <h4>駆け出しエンジニア</h4>
+          <h1>Aki<span>Enginner</span></h1>
+          <h3>HTML/CSS/JapaScript/C#</h3>
+          <div class="newslatter">
+            <form>
+              <!-- <input type="email" placeholder="メールアドレスを入力" /> -->
+              <h4><span>akimoto.ty@i-dataone.co.jp</span></h4>
+              <!-- <input type="submit" value="お問い合わせ" /> -->
+            </form>
+          </div>
+        </div>
+        <img src="https://github.com/akiaki0805/MyWeb/blob/main/NodeJs_Logo.jpg?raw=true" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <!--about me section-->
+  <section class="about">
+    <div class="main">
+      <img src="https://github.com/akiaki0805/MyWeb/blob/main/React_Logo.png?raw=true" alt="" />
+      <div class="about-text">
+        <h2>私について</h2>
+        <h5>幅広い分野で活躍できるエンジニアを目指して！</h5>
+        <p>
+          学生時代はゲームプログラミングの勉強を専門学校で学び、その後マーケティング関連の仕事を勤めました。現在はJavaScriptの勉強に励んでおり勉強の一環でHTML＆CSSを使ったポートフォリオを自作してみました。現在勉強しているのはJavaScriptのReact、まだまだ駆け出しですがよろしくお願いします。
+        </p>
+        <!-- <button class="button">お問い合わせ</button> -->
+        <h4><span> akimoto.ty@i-dataone.co.jp</span></h4>
+      </div>
+    </div>
+  </section>
+
+  <!--portfolio section-->
+  <div class="portfolio">
+    <div class="title">
+      <h2><span>A</span>pplic<span>a</span>tion</h2>
+    </div>
+    <div class="box">
+      <div class="card">
+        <i class="fa-solid fa-bars"></i>
+        <h5>Web Application</h5>
+        <div class="pragraph">
+          <p>
+            Node.jsとFirebaseを使用したアプリケーション。開発日数は約20日です。
+          </p>
+          <p style="text-align: center">
+            
+            <a href="#" class="button">未実装</a>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-bell"></i>
+        <h5>Fullstack Application</h5>
+        <div class="pragraph">
+          <p>現在開発中のプロジェクトです。
+            完成次第こちらに挙げる予定です。
+          </p>
+          <p style="text-align: center">
+            <a href="#" class="button">未実装</a>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-code"></i>
+        <h5>Game Application</h5>
+        <div class="pragraph">
+          <p>
+            学生時にゲームクリエイターとして開発していた作品達です。
+          </p>
+
+          <p style="text-align: center">
+            <a href="#" class="button">未実装</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--contact section-->
+  <div class="contact">
+    <p>気軽にお問い合わせください</p>
+    <!-- <a href="#" class="contact-button">お問い合わせ</a> -->
+    <h4><span> akimoto.ty@i-dataone.co.jp</span></h4>
+  </div>
+
+  <!--footer section-->
+  <footer>
+    <p>Aki<span>Enginner</span></p>
+    <p>Please subscribe my Channel </p>
+        <div class="social">
+            <a href="https://ja-jp.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/?hl=ja"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+        </div>
+    <p class="end">ご覧いただきありがとうございます。</p>
+  </footer>
+  <div id="root"></div>
+
+</body>
+
 </html>
